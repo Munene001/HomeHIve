@@ -18,6 +18,6 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('accounts/', include('django.contrib.auth.urls')),
-    path('accounts/', include('accounts.urls'))
+    path('accounts/', include('django.contrib.auth.urls')),# setting up authentication and authorization for login.html
+    path('accounts/', include('accounts.urls'))#linking up with urls of accounts app to make it possible for signup of user.
 ]
